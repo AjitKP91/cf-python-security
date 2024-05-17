@@ -1,7 +1,7 @@
 ###
 @xsuaaHostname=https://4151765etrial.authentication.us10.hana.ondemand.com
 @btpXsuaaClient=sb-cf-python-security!t250081
-@btpXsuaaSecret=4+GY7Uhe2hTpD8K4Aw3JXrrmKrM=
+@btpXsuaaSecret=
 
 
 # @name getXsuaaToken
