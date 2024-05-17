@@ -1,0 +1,24 @@
+_schema-version: "3.1"
+ID: cf-python-security
+description: Python App with Security on CF
+version: 1.0.0
+
+parameters:
+  enable-parallel-deployments: true
+        
+modules:
+  - name: cf-python-security
+    type: python
+    path: code
+    parameters:
+      memory: 256MB
+      disk: 256M
+    requires:
+      - name: cf-python-security-uaa      
+resources:
+  - name: cf-python-security-uaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      path: ./config/xs-security.json
+      service: xsuaa
+      service-plan: application  
