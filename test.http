@@ -1,7 +1,7 @@
 ###
 @xsuaaHostname=https://4151765etrial.authentication.us10.hana.ondemand.com
-@btpXsuaaClient=sb-myapp!t250081
-@btpXsuaaSecret=ZuhkkijOZaPlt0y32L08uIaPd+M=
+@btpXsuaaClient=sb-cf-python-security!t250081
+@btpXsuaaSecret=4+GY7Uhe2hTpD8K4Aw3JXrrmKrM=
 
 
 # @name getXsuaaToken
@@ -17,7 +17,7 @@ client_id={{btpXsuaaClient}}
 
 ###
 @access_token = {{getXsuaaToken.response.body.$.access_token}}
-@apiEndpointBtp=https://myapp-mediating-manatee-iu.cfapps.us10-001.hana.ondemand.com
+@apiEndpointBtp=https://4151765etrial-dev-cf-python-security.cfapps.us10-001.hana.ondemand.com
 
 # @name apiPythonCall
 GET {{apiEndpointBtp}}/

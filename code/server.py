@@ -11,7 +11,7 @@ app = Flask(__name__)
 port = int(os.environ.get('PORT', 3000))
 
 env = AppEnv()
-uaa_service = env.get_service(name='pyuaa').credentials
+uaa_service = env.get_service(label='xsuaa').credentials
 
 @app.route('/')
 def hello():
